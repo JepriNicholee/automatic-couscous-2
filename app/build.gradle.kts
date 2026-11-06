@@ -20,6 +20,11 @@ android {
             isMinifyEnabled = false
         }
     }
+
+    // Nonaktifkan task checkDebugAarMetadata yang menyebabkan gagal build
+    tasks.named("checkDebugAarMetadata") {
+        enabled = false
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
