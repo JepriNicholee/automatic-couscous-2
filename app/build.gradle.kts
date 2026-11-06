@@ -15,10 +15,6 @@ android {
         versionName = "1.0"
     }
 
-    // Nonaktifkan pengecekan metadata AAR yang menyebabkan gagal build
-    enableAarMetadata = false
-
-
     buildTypes {
         release {
             isMinifyEnabled = false
