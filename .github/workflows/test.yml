@@ -1,0 +1,15 @@
+name: Test Connection
+
+on:
+  push:
+    branches:
+      - 'mythos/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run test echo
+        run: echo 'Koneksi GitHub berhasil!'
