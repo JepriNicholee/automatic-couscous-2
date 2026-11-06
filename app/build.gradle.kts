@@ -21,10 +21,6 @@ android {
         }
     }
 
-    // Nonaktifkan task checkDebugAarMetadata yang menyebabkan gagal build
-    tasks.named("checkDebugAarMetadata") {
-        enabled = false
-    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -35,8 +31,8 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.fragment:fragment:1.6.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.core:core-ktx:1.13.2")
+    implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("androidx.fragment:fragment:1.7.1")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.5")
 }
