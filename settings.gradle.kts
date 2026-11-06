@@ -12,3 +12,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "proyek- Harran-031728"
+include(":app")
