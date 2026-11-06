@@ -35,4 +35,12 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.7.1")
     implementation("androidx.fragment:fragment:1.7.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.5")
+    // Dependensi eksplisit untuk mengatasi checkDebugAarMetadata
+    implementation("androidx.drawerlayout:drawerlayout:1.2.0")
+    implementation("androidx.customview:customview:1.1.0")
+    implementation("androidx.emoji2:emoji2:1.4.0")
+    implementation("androidx.emoji2:emoji2-views-helper:1.4.0")
+    implementation("androidx.loader:loader:1.1.0")
+    implementation("androidx.viewpager:viewpager:1.0.0")
+    implementation("androidx.resourceinspection:resourceinspection-annotation:1.0.1")
 }
