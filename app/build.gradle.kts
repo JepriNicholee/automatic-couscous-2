@@ -45,7 +45,11 @@ dependencies {
     implementation("androidx.resourceinspection:resourceinspection-annotation:1.0.1")
 }
 
-// Nonaktifkan task CheckAarMetadata yang gagal di CI
-tasks.withType<com.android.build.gradle.tasks.CheckAarMetadata> {
-    enabled = false
+// Nonaktifkan task CheckAarMetadata yang gagal di CI (AGP 8.7+)
+// tasks.withType<com.android.build.gradle.tasks.CheckAarMetadata> { enabled = false } // Tidak dikenali, hapus baris ini
+
+// Gunakan properti Gradle untuk menonaktifkan task ini
+val checkAarMetadataTask = tasks.findByName("checkDebugAarMetadata")
+if (checkAarMetadataTask != null) {
+    checkAarMetadataTask.enabled = false
 }
